@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap 实例 - 图像</title>
+    <!-- Local bootstrap CSS & JS -->
+    <link rel="stylesheet" media="screen" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <!-- bootstrap使用，要到导入他的css文件或者js文件，才能使用相关的css和js功能 -->
+    <style type="text/css" media="screen">
+    div {
+        /*background-color: grey;*/
+        margin: 0px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+        <div class="row" style="background-color: red">
+            <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
+        <div class="row" style="background-color: pink">
+            <div class="col-sm-6 col-lg-4">.col-sm-6 .col-lg-4</div>
+            <div class="col-sm-6 col-lg-4">.col-sm-6 .col-lg-4</div>
+            <div class="col-sm-6 col-lg-4">.col-sm-6 .col-lg-4</div>
+        </div>
+        <!-- Columns are always 50% wide, on mobile and desktop -->
+        <div class="row" style="background-color: yellow">
+            <div class="col-xs-6">.col-xs-6</div>
+            <div class="col-xs-6">.col-xs-6</div>
+        </div>
+        <div class="row" style="background-color: grey">
+            <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+            <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+        </div>
+        <div class="row" style="background-color: lightgreen">
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+            <!-- Optional: clear the XS cols if their content doesn't match in height -->
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+        </div>
+        <div class="row" style="background-color: purple">
+            <div class="row">
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <!-- Add the extra clearfix for only the required viewport -->
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+            </div>
+        </div>
+        <div class="row" style="background-color: yellow">
+            <div class="col-sm-5 col-md-6">.col-sm-5 .col-md-6</div>
+            <div class="col-sm-5 col-sm-offset-2 col-md-6 col-md-offset-0">.col-sm-5 .col-sm-offset-2 .col-md-6 .col-md-offset-0</div>
+        </div>
+        <div class="row" style="background-color: green">
+            <div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+            <div class="col-sm-6 col-md-5 col-md-offset-2 col-lg-6 col-lg-offset-0">.col-sm-6 .col-md-5 .col-md-offset-2 .col-lg-6 .col-lg-offset-0</div>
+        </div>
+        <div class="row" style="background-color: yellow">
+            <div class="col-md-4 col-md-offset-2" style="background-color: green">
+                列偏移
+            </div>
+        </div>
+        <div class="row" style="background-color: green">
+            <div class="col-md-10" style="background-color: pink">
+                1111111111111
+                <div class="row">
+                    <div class="col-md-4" style="background-color: blue">
+                        22222222222222
+                    </div>
+                    <div class="col-md-4" style="background-color: purple">
+                        33333333333333 在列的基础上放入多行，每个新建的行都有12个格
+                    </div>
+                    <div class="col-md-4" style="background-color: green">
+                        44444444444444444444444444444444444
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-9 col-md-push-3" style="background-color: yellow">.col-md-9 .col-md-push-3</div>
+            <div class="col-md-3 col-md-pull-9" style="background-color: purple">设定顺序全部列都要设定，否则会重叠</div>
+        </div>
+    </div>
+</body>
+
+</html>

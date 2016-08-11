@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap 实例 - 图像</title>
+    <!-- Local bootstrap CSS & JS -->
+    <link rel="stylesheet" media="screen" href="css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+    <!-- bootstrap使用，要到导入他的css文件或者js文件，才能使用相关的css和js功能 -->
+</head>
+
+<body>
+    <div class="container-fluid">
+        <form action="表单_submit" method="get" accept-charset="utf-8">
+            <div class="input-group">
+                <!-- input-group组的宽度为实际宽度 -->
+                <label for="inputGagaga" class="col-sm-2">gagagaga</label>
+                <input type="email" name="gagaga" id="inputGagaga" class="form-control" value="" required="required" title="" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <!-- from-group组的宽度100% -->
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <!-- Email会自动检测格式,防止为空等-->
+            </div>
+            <div class="input-group">
+                <label for="lalala" class="col-sm-2">password</label>
+                <input type="password" name="" id="lalala" class="form-control" required="required" title="" placeholder="请输入密码">
+            </div>
+            <div class="input-group">
+                <label for="xixixi" class="col-sm-2"></label>
+                <input type="file" id="xixixi" placeholder="">
+                <!-- 默认有选择文件字眼 -->
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="选择1"> Checkbox1
+                </label>
+                <label>
+                    <input type="checkbox" value="选择2"> Checkbox2
+                </label>
+                <label>
+                    <input type="checkbox" value="选择3"> Checkbox3
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">提交</button>
+            <input type="reset" value="Reset" class="btn btn-default">
+        </form>
+        <form class="form-inline">
+            <!-- 内联表单在form上设定样式 -->
+            <div class="form-group">
+                <label for="input-id" class="">请选择时间</label>
+                <input type="month" name="" id="input" class="form-control" value="" required="required" title="">
+            </div>
+            <div class="radio">
+                <label>
+                    <input type="radio" name="" id="input" value="" checked="checked">单选框
+                </label>
+            </div>
+            <div class="form-group">
+                <label for="input-id" class="sr-only">lalala</label>
+                <!-- sr-only样式隐藏label -->
+                <select name="" id="input" class="form-control">
+                    <option value="">-- Select One --</option>
+                    <option value="">-- Select Two --</option>
+                    <option value="">-- Select Three --</option>
+                </select>
+            </div>
+        </form>
+        <!--         <form class="form-horizontal">
+            <div class="form-group">
+                <label for="input-id" class="col-sm-2 control-label">请输入数字</label>
+                <div class="col-sm-10">
+                    <input type="number" name="" id="input" class="form-control" value="" min="{5" } max="" step="" required="required" title="">
+                </div>
+        </form> -->
+        <form class="form-horizontal">
+            <!-- 1、添加form-horizontal -->
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <!-- 2、用div嵌套input并且栅格化 -->
+                    <input type="email" class="form-control col-sm-10" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Remember me
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Sign in</button>
+                </div>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="" class="col-sm-2">文本</label>
+                <div class="col-sm-10">
+                    <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="input-id" class="col-sm-2"></label>
+                <div class="form-group col-sm-10">
+                    <textarea class="form-control" name="" rows="3" placeholder="lalala"></textarea>
+                </div>
+            </div>
+        </form>
+        <form action="" method="get" accept-charset="utf-8">
+            <div class="input-group">
+                <div class="checkbox disabled">
+                    <!-- 禁止输入样式 -->
+                    <label>
+                        <input type="checkbox" value="lalala" disabled>
+                        <!-- 禁止输入命令 -->
+                        Checkbox1
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="gagaga">
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="gagga" checked> Checkbox3
+                        <!-- 选中添加属性Checked -->
+                    </label>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" value="gaga"> Checkbox4
+                    </label>
+                </div>
+            </div>
+        </form>
+        <form action="" method="get" accept-charset="utf-8">
+            <div class="input-group">
+                <label for="input-id" class="col-sm-2">单选框</label>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="lalala" id="input" value=""> Radio Box
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="lalala" id="input" value="" checked> Radio Box
+                        <!-- 选中要使用Checked 要有同组名 -->
+                    </label>
+                </div>
+                <div class="radio">
+                    <label>
+                        <input type="radio" name="lalala" id="input" value=""> Radio Box
+                    </label>
+                </div>
+            </div>
+        </form>
+        <form action="" method="get" accept-charset="utf-8">
+            <div class="input-group">
+                <label class="radio-inline">
+                    <!--内联样式多选和单选框，去掉外层div，还可以加上对应样式到label修饰 -->
+                    <input type="radio" name="lalala" id="input" value=""> Radio Box
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="lalala" id="input" value="" checked> Radio Box
+                    <!-- 选中要使用Checked 要有同组名 -->
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="lalala" id="input" value=""> Radio Box
+                </label>
+            </div>
+            <div class="input-group">
+                <!-- 禁止输入样式 -->
+                <label class="radio-inline">
+                    <input type="checkbox" value="lalala" disabled>
+                    <!-- 禁止输入命令 -->
+                    Checkbox1
+                </label>
+                <label class="radio-inline">
+                    <input type="checkbox" value="gagaga"> Checkbox2
+                </label>
+                <label class="radio-inline">
+                    <input type="checkbox" value="gagga" checked> Checkbox3
+                    <!-- 选中添加属性Checked -->
+                </label>
+                <label class="radio-inline">
+                    <input type="checkbox" value="gaga"> Checkbox4
+                </label>
+            </div>
+        </form>
+        <form action="" method="get" accept-charset="utf-8">
+            <div class="input-group">
+                <label for="input-id" class="col-sm-2">请选择</label>
+                <select name="" id="input" class="form-control" multiple>
+                    <!-- 显示多行，但是行数有限 -->
+                    <option value="">-- Select 1 --</option>
+                    <option value="">-- Select 2 --</option>
+                    <option value="">-- Select 3 --</option>
+                    <option value="">-- Select 4 --</option>
+                    <option value="">-- Select 4 --</option>
+                    <option value="">-- Select 4 --</option>
+                    <option value="">-- Select 4 --</option>
+                    <option value="">-- Select 4 --</option>
+                    <option value="">-- Select 4 --</option>
+                    <option value="">-- Select 4 --</option>
+                </select>
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Email</label>
+                <div class="col-sm-10">
+                    <p class="form-control-static">email@example.com</p>
+                    <!-- 文本元素和label放在一行并且对其 -->
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputPassword" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+            </div>
+        </form>
+        <form class="form-inline">
+            <div class="form-group">
+                <label class="sr-only">Email</label>
+                <p class="form-control-static">email@example.com</p>
+                <!-- 和同一行的inline元素对其 -->
+            </div>
+            <div class="form-group">
+                <label for="inputPassword2" class="sr-only">Password</label>
+                <input type="password" class="form-control" id="inputPassword2" placeholder="Password" disabled>
+                <!-- 输入框禁用状态 -->
+            </div>
+            <button type="submit" class="btn btn-default">Confirm identity</button>
+        </form>
+        <form>
+            <fieldset disabled>
+                <!-- 禁用整个标签内的表单控件（不要包含多余的控件），兼容性实现使用js控制 -->
+                <div class="form-group">
+                    <label for="disabledTextInput">Disabled input</label>
+                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input">
+                </div>
+                <div class="form-group">
+                    <label for="disabledSelect">Disabled select menu</label>
+                    <select id="disabledSelect" class="form-control">
+                        <option>Disabled select</option>
+                    </select>
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Can't check this
+                    </label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+        </form>
+        <form>
+            <div class="form-group">
+                <label for="disabledTextInput">Disabled input</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Disabled input" readonly>
+                <!-- 只读状态 -->
+            </div>
+            <div class="form-group has-success">
+                <!-- 被状态元素包含，并且被包含元素还包含ontrol-label、.form-control 和 .help-block这三种样式 -->
+                <label for="disabledSelect" class="control-label">Disabled select menu</label>
+                <select id="disabledSelect" class="form-control">
+                    <option>Disabled select</option>
+                </select>
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Can't check this
+                </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <form>
+            <div class="form-group has-success has-feedback">
+                <!-- div要有has-feedback -->
+                <label class="control-label" for="inputSuccess2">Input with success</label>
+                <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                <!-- input要有form-control -->
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <!-- 添加图标 -->
+                <!-- <span id="inputSuccess2Status" class="sr-only">(success)</span> -->
+                <!-- 其他设备显示 -->
+            </div>
+            <div class="form-group has-success has-feedback">
+                <label class="control-label" for="inputGroupSuccess1">Input group with success</label>
+                <div class="input-group">
+                    <span class="input-group-addon">@</span>
+                    <input type="text" class="form-control" id="inputGroupSuccess1">
+                </div>
+                <span class="glyphicon glyphicon-star form-control-feedback" style="color: red"></span>
+                <!-- <span class="glyphicon glyphicon-music form-control-feedback"></span> -->
+                <!-- 只能在最后面显示一个多的会重叠，颜色跟随input -->
+            </div>
+        </form>
+        <form class="form-horizontal">
+            <div class="form-group has-success has-feedback">
+                <!-- div要有has-feedback -->
+                <label class="control-label col-sm-2" for="inputSuccess2">Input with success</label>
+                <div class="col-sm-10 input-group">
+                    <span class="input-group-addon" id="basic-addon2">@example.com</span>
+                    <input type="text" class="form-control" id="inputSuccess2" aria-describedby="inputSuccess2Status">
+                    <!-- input要有form-control -->
+                    <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                    <!-- 添加图标 -->
+                    <!-- <span id="inputSuccess2Status" class="sr-only">(success)</span> -->
+                    <!-- 其他设备显示 -->
+                </div>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username">
+                <span class="input-group-addon" id="basic-addon2">@example.com</span>
+            </div>
+            <div class="input-group">
+                <!-- 要有input-group -->
+                <span class="input-group-addon glyphicon glyphicon-ok" id="basic-addon2"></span>
+                <!-- span要有input-group-addon，放置文字，放图标会对不齐，多个不会覆盖 -->
+                <input type="text" class="form-control" placeholder="Recipient's username">
+                <span class="input-group-addon glyphicon glyphicon-ok" id="basic-addon2"></span>
+            </div>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Recipient's username">
+                <span class="glyphicon glyphicon-ok form-control-feedback" aria-hidden="true"></span>
+                <span class="input-group-addon" id="basic-addon2">
+                <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                <!-- 嵌套防止图标会有重影 -->
+                </span>
+            </div>
+            <input class="form-control input-lg" type="text" placeholder=".input-lg">
+            <input class="form-control input-md" type="text" placeholder="Default input">
+            <input class="form-control input-sm" type="text" placeholder=".input-sm">
+            <select class="form-control input-lg">...</select>
+            <select class="form-control input-md">...</select>
+            <select class="form-control input-sm">...</select>
+            <!-- 默认md尺寸，没有xs尺寸 -->
+        </form>
+        <form class="form-horizontal">
+            <div class="form-group form-group-lg">
+                <label for="input-id" class="col-sm-2 control-label">asdf</label>
+                <div class="col-sm-10" ">
+                    <input class='form-control' type="text " placeholder=".input-lg ">
+                    <!-- 宽度设定用栅格系统 -->
+                 </div>
+            </div>
+            <div>
+                <label class="sr-only " for="inputHelpBlock ">Input with help text</label>
+                <input type="text " id="inputHelpBlock " class="form-control " aria-describedby="helpBlock ">
+                <span id="helpBlock " class="help-block ">A block of help text that breaks onto a new line and may extend beyond one line.</span>
+                <!-- 辅助文本 -->
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>
